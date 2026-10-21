@@ -4,17 +4,22 @@
 
 ![Проверка состояния](docs/screenshots/01_health.png)
 
+> Полная инструкция по установке, сборке EXE и решению проблем — в **[INSTALL.md](INSTALL.md)**.
+
 ## Запуск
+Двойной клик по `run.bat` — или вручную:
 ```bat
 python -m pip install -r requirements.txt
 python sexy_cleaner.py
 ```
 
 ## Сборка EXE
+Двойной клик по `build.bat` — или вручную:
 ```bat
 python -m pip install pyinstaller
 python -m PyInstaller --noconfirm --clean --windowed --name "SexyClean" --add-data "assets;assets" sexy_cleaner.py
 ```
+EXE появится в `dist\SexyClean\SexyClean.exe`.
 
 ## Возможности
 
